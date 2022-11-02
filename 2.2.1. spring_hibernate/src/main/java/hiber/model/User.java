@@ -74,12 +74,12 @@ public class User {
 
    @Override
    public String toString() {
-      return "User{" +
-              "id=" + id +
-              ", firstName='" + firstName + '\'' +
-              ", lastName='" + lastName + '\'' +
-              ", email='" + email + '\'' +
-              ", car=" + car +
+      return "Пользователь " +
+              "id = " + id +
+              ", Имя " + firstName + '\'' +
+              ", фамилия'" + lastName + '\'' +
+              ", электронный адрес" + email + '\'' +
+              ", Автомобиль пользователя " + car +
               '}';
    }
 }
