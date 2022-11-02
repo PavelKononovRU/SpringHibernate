@@ -1,4 +1,4 @@
-/*package hiber.model;
+package hiber.model;
 
 import javax.persistence.*;
 
@@ -57,4 +57,4 @@ public class Car {
                 ", series=" + series +
                 '}';
     }
-}*/
+}
