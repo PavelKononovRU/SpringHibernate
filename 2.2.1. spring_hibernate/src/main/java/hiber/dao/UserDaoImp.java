@@ -39,15 +39,11 @@ public class UserDaoImp implements UserDao {
               .setParameter("model", model)
               .setParameter("series", series)
               .getResultList();
-      System.out.println("Должно быть начало вывода");
 
-      for (User user : userslist) {
-         System.out.println(user.toString());
-      }
+      System.out.println("Результат вывода пользователя по модели и серии автомобиля: ");
 
-      System.out.println("А здесь конец");
-
-      //userslist.forEach(System.out::println);
+      userslist.forEach(System.out::println);
+      System.out.println();
 
       return userslist;
    }

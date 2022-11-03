@@ -75,11 +75,11 @@ public class User {
    @Override
    public String toString() {
       return "Пользователь " +
-              "id = " + id +
-              ", Имя " + firstName + '\'' +
-              ", фамилия'" + lastName + '\'' +
-              ", электронный адрес" + email + '\'' +
-              ", Автомобиль пользователя " + car +
+              "id: " + id +
+              " Имя: " + firstName +
+              " Фамилия: " + lastName +
+              " Электронный адрес:" + email +
+              " Автомобиль пользователя:" + car +
               '}';
    }
 }
