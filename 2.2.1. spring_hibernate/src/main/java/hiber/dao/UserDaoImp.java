@@ -32,12 +32,11 @@ public class UserDaoImp implements UserDao {
    public List<User> getUser(String model, int series) {
       List<User> userslist = null;
 
-      String query = "select * from users u where u.users_id in (select id from car c where c.model = :modelPram and c.series = :carSeriesParam)";
+      String query = "FROM User WHERE users_id in (select id FROM Car c WHERE c.model = :model)";
 
-      userslist = sessionFactory.getCurrentSession().createSQLQuery(query)
-              .setParameter("modelPram", model)
-              .setParameter("carSeriesParam", series)
-              .addEntity(User.class)
+      userslist = sessionFactory.getCurrentSession().createQuery(query)
+              .setParameter("model", model)
+              //.setParameter("series", series)
               .getResultList();
       System.out.println("Должно быть начало вывода");
 
